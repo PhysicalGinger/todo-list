@@ -1,5 +1,11 @@
 {
     "require-dev": {
         "phpunit/phpunit" : "^9"
+    },
+
+    "phpunit.ssh" : "ssh root@localhost \"<command>\"",
+    "phpunit.paths": {
+        "/local/path": "/remote/path",
+        "${workspaceFolder}": "/"
     }
 }
